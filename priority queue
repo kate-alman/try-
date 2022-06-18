@@ -22,11 +22,11 @@ for _ in range(int(input())):
         i = 0
         while 2 * i + 1 <= len(lst) - 1:
             j = i
-            if lst[2 * i + 1] > lst[i]:
+            elif lst[2 * i + 1] > lst[i]:
                 j = 2 * i + 1
-            if 2 * i + 2 <= len(lst) - 1 and lst[2 * i + 2] > lst[j]:
+            elif 2 * i + 2 <= len(lst) - 1 and lst[2 * i + 2] > lst[j]:
                 j = 2 * i + 2
-            if i == j:
+            elif i == j:
                 break
             else:
                 lst[i], lst[j] = lst[j], lst[i]
